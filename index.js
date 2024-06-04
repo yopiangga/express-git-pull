@@ -13,7 +13,7 @@ app.get("/update-github", async (req, res) => {
     // Pull the latest changes from the remote repository
     await git.pull(gitUrl);
 
-    console.log("Repository updated successfully!");
+    console.log("Repository updated successfully! :)");
     res.send("Repository updated successfully!");
   } catch (error) {
     console.error("Error updating repository:", error);
